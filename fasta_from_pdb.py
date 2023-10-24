@@ -19,11 +19,17 @@ def pdb_to_fasta(pdb_file, fasta_file):
         SeqIO.write(record, output_file, "fasta")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+
+    if sys.argv[1] == "-h" or sys.argv[1] == '-help' or sys.argv[1] == '-h' or sys.argv[1] == '-H':
+        print('Mira capo se usa asi esto => python programa.py archivo.pdb salida.fasta')
+        
+        
+    elif len(sys.argv) != 3:
         print("Uso: python programa.py archivo.pdb salida.fasta")
         sys.exit(1)
 
-    pdb_file = sys.argv[1]
-    fasta_file = sys.argv[2]
+    else: 
+        pdb_file = sys.argv[1]
+        fasta_file = sys.argv[2]
 
-    pdb_to_fasta(pdb_file, fasta_file)
+        pdb_to_fasta(pdb_file, fasta_file)

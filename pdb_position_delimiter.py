@@ -27,7 +27,8 @@ def main():
 
     if len(sys.argv) != 5:
         if sys.argv[1] in ["-h", "--help", "-h", "--help"]:
-            print("Uso: python programa.py archivo.pdb inicio fin archivo_salida")
+            print("Uso: python programa.py archivo.pdb inicio fin archivo_salida",
+            "Este programa recorta un pdb segun posiciones")
             sys.exit(0)
         else:
             print("Uso incorrecto. Para ayuda, ejecute con -h, --help, -h, o --help.")

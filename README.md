@@ -1,1 +1,1 @@
-Useful Scripts thaT I use daily
+Useful Scripts that I use daily

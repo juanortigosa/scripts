@@ -1,0 +1,2 @@
+render TachyonInternal DMT-NUBEelectronica-2a.tga -fullshade -auto_skylight 0.7 -aasamples 12 %s -format TGA -res 6000 4000 -o %s.tga
+

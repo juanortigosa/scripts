@@ -1,0 +1,9 @@
+mol new {archivo_holo}
+set reference [atomselect 0 {residuos_holo}]
+mol new {archivo_apo}
+set compare [atomselect 1 {residuos_apo_que_coincidan_en_holo}]
+set trans_mat [measure fit $compare $reference]
+set compare_bs [atomselect 1 "all"]
+$compare_bs move $trans_mat
+animate write pdb receptor_apo_alineado.pdb
+quit
